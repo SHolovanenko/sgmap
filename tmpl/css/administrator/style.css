@@ -1,0 +1,73 @@
+#edit_area {
+    max-width: 600px;
+}
+
+#template .element {
+    border: 1px solid #28a745;
+}
+
+.element {
+    background-color: #f2f2f2;
+    border: 1px solid #ededed;
+    border-bottom: 3px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.element-drag {
+    float: left;
+    padding: 10px;
+}
+
+.element-drag:hover {
+    cursor: move;
+}
+
+.field {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 10px;
+}
+
+.field div {
+    display: inline-block;
+}
+
+.field div input {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+}
+
+.deleteElement,
+.addField {
+    margin: 10px;
+    text-align: right;
+}
+
+.deleteElement span,
+.deleteField span {
+    cursor: pointer;
+}
+
+.deleteField {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.btn-button {
+    margin: 10px;
+    padding: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: #28a745;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn-button:hover {
+    background-color: #218838;
+    cursor: pointer;
+}

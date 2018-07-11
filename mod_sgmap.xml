@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>sgmap</name>
+    <author>S. Holovanenko</author>
+    <version>1.0.0</version>
+    <description>Google map for adress of departments</description>
+    <files>
+        <filename>mod_sgmap.xml</filename>
+        <filename module="mod_sgmap">mod_sgmap.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+
+        <folder>tmpl/js</folder>
+        <folder>tmpl/css</folder>
+
+        <filename>models/fields/DataCustomJsonFieldForScript.php</filename>
+        <filename>models/fields/DataCustomJsonTemplateFieldForScript.php</filename>
+    </files>
+    
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/modules/mod_sgmap/models/fields">
+                <field
+                    name="dataJson"
+                    type="textarea"
+                    default=""
+                    cols="10" 
+                    rows="1" 
+                    label="Data (JSON)"
+                    description="Data json"    
+                />
+                <field name="data-custom-json-field" type="DataCustomJsonFieldForScript" />
+            </fieldset>
+
+            <fieldset name="basic" addfieldpath="/modules/mod_sgmap/models/fields">
+                <field
+                    name="dataJsonTemplate"
+                    type="textarea"
+                    default=""
+                    cols="10" 
+                    rows="1" 
+                    label="Data template (JSON)"
+                    description="Data template"    
+                />
+                <field name="data-custom-json-template-field" type="DataCustomJsonTemplateFieldForScript" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
